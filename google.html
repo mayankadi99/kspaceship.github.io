@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>New Tab</title>
+    <link rel="stylesheet" href="newtab.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <!-- The Modal -->
+    <div id="myModal3" class="modal3">
+
+        <!-- Modal content -->
+        <div class="modal-content3">
+            <span class="close3">&times;</span>
+            <label>Change Search Engine</label>
+            <ul>
+                <a href="newtab.html">
+                    <button class="btt">Bing</button>
+                </a>
+                <br>
+                <br>
+                <a href="yahoo.html">
+                    <button class="btt">Yahoo</button>
+                </a>
+            </ul>
+        </div>
+
+    </div>
+    <!--The Modal2 -->
+    <div id="myModal4" class="modal4">
+
+        <!-- Modal2 content -->
+        <div class="modal-content4">
+            <span class="close4">&times;</span>
+            <label>Khanda Apps</label>
+            <ul>
+                <a href="file:///C:/Users/mayan/Desktop/Koala%20Software/Khanda%20Dictionary/index.html">
+                    <button class="btt">Dictionary</button>
+                </a>
+                <br>
+                <br>
+                <a href="file:///C:/Users/mayan/Desktop/Koala%20Software/Khanda%20Translation/index.html">
+                    <button class="btt">Translation</button>
+                </a>
+                <br>
+                <br>
+                <a href="file:///C:/Users/mayan/Desktop/Koala%20Software/Koala%20Calender/index.html">
+                    <button class="btt">Calendar</button>
+                </a>
+            </ul>
+        </div>
+
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <header>
+            <h1 class="text">SpaceShip Settings</h1>
+        </header>
+        <div>
+            <button class="button" onclick="darkMode()">Toggle Darkmode/Lightmode</button>
+            <button id="myBtn3" class=" button ">
+                <span class="material-symbols-outlined">
+                manage_search
+                </span>
+            </button>
+        </div>
+    </div>
+    <nav class="nav">
+        <h3>Double click the tab bar to open a New Tab</h3>
+    </nav>
+    <a href="file:///C:/Users/mayan/Desktop/Koala%20Software/Koala_Account/login.html">
+        <button class="button" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><span class="material-symbols-outlined">
+            login
+            </span>
+        </button>
+    </a>
+    <button class="bts">
+        <span onclick="openNav()">
+          <span class="material-symbols-outlined">
+          settings
+          </span>
+      </span>
+      </button>
+    <button id="myBtn2" class="button" style.display='block' style="width:auto;">
+        <span class="material-symbols-outlined">
+            apps
+        </span>
+    </button>
+    <section>
+        <div class=" main ">
+            <img class="bing " src="google.png ">
+            <div class="searchBx ">
+                <form action="https://www.google.com/search" method="GET">
+                    <input type="text " class="query " name="q" placeholder="Search the Web with Khanda SpaceShip ">
+                    <div class="icons ">
+                        <div>
+                            <img src="search.png">
+                        </div>
+                        <div>
+                            <img src="mic.png" onclick="startDictation()">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <br>
+            <br>
+            <div>
+                <a href="https://www.google.com " class="fa fa-google "></a>
+                <a href="https://www.youtube.com " class="fa fa-youtube "></a>
+                <a href="https://www.facebook.com " class="fa fa-facebook "></a>
+                <a href="https://www.amazon.com " class="fa fa-amazon "></a>
+                <a href="https://twitter.com/ " class="fa fa-twitter "></a>
+                <a href="https://en.wikipedia.org/wiki/Main_Page " class="fa fa-wikipedia-w "></a>
+                <a href="https://www.instagram.com/ " class="fa fa-instagram "></a>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal3");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn3");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close3")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        // Get the modal
+        var modal2 = document.getElementById("myModal4");
+
+        // Get the button that opens the modal
+        var btn2 = document.getElementById("myBtn2");
+
+        // Get the <span> element that closes the modal
+        var span2 = document.getElementsByClassName("close4")[0];
+
+        // When the user clicks on the button, open the modal
+        btn2.onclick = function() {
+            modal2.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span2.onclick = function() {
+            modal2.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <script>
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+
+</html>
